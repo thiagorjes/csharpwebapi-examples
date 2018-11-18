@@ -1,0 +1,14 @@
+C:\Users\thiag\DOTNET\sistema\bin\Debug\netcoreapp2.1\sistema.deps.json
+C:\Users\thiag\DOTNET\sistema\bin\Debug\netcoreapp2.1\sistema.runtimeconfig.json
+C:\Users\thiag\DOTNET\sistema\bin\Debug\netcoreapp2.1\sistema.runtimeconfig.dev.json
+C:\Users\thiag\DOTNET\sistema\bin\Debug\netcoreapp2.1\sistema.dll
+C:\Users\thiag\DOTNET\sistema\bin\Debug\netcoreapp2.1\sistema.pdb
+C:\Users\thiag\DOTNET\sistema\obj\Debug\netcoreapp2.1\sistema.csprojAssemblyReference.cache
+C:\Users\thiag\DOTNET\sistema\obj\Debug\netcoreapp2.1\sistema.csproj.CoreCompileInputs.cache
+C:\Users\thiag\DOTNET\sistema\obj\Debug\netcoreapp2.1\sistema.RazorAssemblyInfo.cache
+C:\Users\thiag\DOTNET\sistema\obj\Debug\netcoreapp2.1\sistema.RazorAssemblyInfo.cs
+C:\Users\thiag\DOTNET\sistema\obj\Debug\netcoreapp2.1\sistema.AssemblyInfoInputs.cache
+C:\Users\thiag\DOTNET\sistema\obj\Debug\netcoreapp2.1\sistema.AssemblyInfo.cs
+C:\Users\thiag\DOTNET\sistema\obj\Debug\netcoreapp2.1\sistema.RazorTargetAssemblyInfo.cache
+C:\Users\thiag\DOTNET\sistema\obj\Debug\netcoreapp2.1\sistema.dll
+C:\Users\thiag\DOTNET\sistema\obj\Debug\netcoreapp2.1\sistema.pdb

@@ -1,0 +1,14 @@
+C:\Users\thiag\DOTNET\aplicacao\bin\Debug\netcoreapp2.1\aplicacao.deps.json
+C:\Users\thiag\DOTNET\aplicacao\bin\Debug\netcoreapp2.1\aplicacao.runtimeconfig.json
+C:\Users\thiag\DOTNET\aplicacao\bin\Debug\netcoreapp2.1\aplicacao.runtimeconfig.dev.json
+C:\Users\thiag\DOTNET\aplicacao\bin\Debug\netcoreapp2.1\aplicacao.dll
+C:\Users\thiag\DOTNET\aplicacao\bin\Debug\netcoreapp2.1\aplicacao.pdb
+C:\Users\thiag\DOTNET\aplicacao\obj\Debug\netcoreapp2.1\aplicacao.csprojAssemblyReference.cache
+C:\Users\thiag\DOTNET\aplicacao\obj\Debug\netcoreapp2.1\aplicacao.csproj.CoreCompileInputs.cache
+C:\Users\thiag\DOTNET\aplicacao\obj\Debug\netcoreapp2.1\aplicacao.RazorAssemblyInfo.cache
+C:\Users\thiag\DOTNET\aplicacao\obj\Debug\netcoreapp2.1\aplicacao.RazorAssemblyInfo.cs
+C:\Users\thiag\DOTNET\aplicacao\obj\Debug\netcoreapp2.1\aplicacao.AssemblyInfoInputs.cache
+C:\Users\thiag\DOTNET\aplicacao\obj\Debug\netcoreapp2.1\aplicacao.AssemblyInfo.cs
+C:\Users\thiag\DOTNET\aplicacao\obj\Debug\netcoreapp2.1\aplicacao.RazorTargetAssemblyInfo.cache
+C:\Users\thiag\DOTNET\aplicacao\obj\Debug\netcoreapp2.1\aplicacao.dll
+C:\Users\thiag\DOTNET\aplicacao\obj\Debug\netcoreapp2.1\aplicacao.pdb
