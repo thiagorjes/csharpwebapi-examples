@@ -15,7 +15,7 @@ Migrations:
 
 Secrets to ConnectionStrings:
 
-- dotnet user-secrets set ConnectionStrings.DbName
+- dotnet user-secrets set ConnectionStrings.DbName "server=servername;port=3306;user=username;password=passwdOfUser;database=DbName" (Use the connection string of your connection provider, in this case: Mysql)
 
 Using secrets on scaffold:
 
