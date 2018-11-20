@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>Teste-de-secret-Id-serah-que-rola</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,9 +14,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="2.1.1" />
     <PackageReference Include="Mysql.Data.EntityFrameworkCore" Version="8.0.13" />
-    <PackageReference Include="nswag.aspnetcore" Version="12.0.0" />
-    <PackageReference Include="nswag.codegeneration.csharp" Version="12.0.0" />
     <PackageReference Include="swashbuckle.aspnetcore" Version="4.0.1" />
   </ItemGroup>
 
