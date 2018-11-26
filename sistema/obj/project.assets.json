@@ -2254,6 +2254,19 @@
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
+      "Microsoft.Extensions.SecretManager.Tools/2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.UserSecrets": "2.0.2",
+          "Microsoft.NETCore.App": "2.0.7"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/dotnet-user-secrets.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/dotnet-user-secrets.dll": {}
+        }
+      },
       "Microsoft.Extensions.WebEncoders/2.1.1": {
         "type": "package",
         "dependencies": {
@@ -6541,6 +6554,19 @@
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
         "microsoft.extensions.primitives.2.1.1.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.SecretManager.Tools/2.0.2": {
+      "sha512": "s8882q88oX39ENQcrPKCwgpVq2ihvcghjRBaWRbY7VJXC9utb0OjxGtO+0xPK36nHgn8ybT8JcwC1njU+mmQrA==",
+      "type": "package",
+      "path": "microsoft.extensions.secretmanager.tools/2.0.2",
+      "files": [
+        ".signature.p7s",
+        "lib/netcoreapp2.0/dotnet-user-secrets.dll",
+        "lib/netcoreapp2.0/dotnet-user-secrets.runtimeconfig.json",
+        "microsoft.extensions.secretmanager.tools.2.0.2.nupkg.sha512",
+        "microsoft.extensions.secretmanager.tools.nuspec",
+        "prefercliruntime"
       ]
     },
     "Microsoft.Extensions.WebEncoders/2.1.1": {
@@ -11971,6 +11997,7 @@
       "Microsoft.EntityFrameworkCore >= 2.1.4",
       "Microsoft.EntityFrameworkCore.Design >= 2.1.4",
       "Microsoft.Extensions.Configuration.UserSecrets >= 2.1.1",
+      "Microsoft.Extensions.SecretManager.Tools >= 2.0.2",
       "Microsoft.NETCore.App >= 2.1.0",
       "Mysql.Data.EntityFrameworkCore >= 8.0.13",
       "swashbuckle.aspnetcore >= 4.0.1"
@@ -11983,11 +12010,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\t.goncalves.DINT\\DOTNET\\GITHUB\\csharpwebapi-examples\\sistema\\sistema.csproj",
+      "projectUniqueName": "c:\\Users\\t.goncalves.DINT\\DOTNET\\GITHUB\\csharpwebapi-examples\\sistema\\sistema.csproj",
       "projectName": "sistema",
-      "projectPath": "C:\\Users\\t.goncalves.DINT\\DOTNET\\GITHUB\\csharpwebapi-examples\\sistema\\sistema.csproj",
+      "projectPath": "c:\\Users\\t.goncalves.DINT\\DOTNET\\GITHUB\\csharpwebapi-examples\\sistema\\sistema.csproj",
       "packagesPath": "C:\\Users\\t.goncalves.DINT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\t.goncalves.DINT\\DOTNET\\GITHUB\\csharpwebapi-examples\\sistema\\obj\\",
+      "outputPath": "c:\\Users\\t.goncalves.DINT\\DOTNET\\GITHUB\\csharpwebapi-examples\\sistema\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12039,6 +12066,10 @@
           "Microsoft.Extensions.Configuration.UserSecrets": {
             "target": "Package",
             "version": "[2.1.1, )"
+          },
+          "Microsoft.Extensions.SecretManager.Tools": {
+            "target": "Package",
+            "version": "[2.0.2, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",

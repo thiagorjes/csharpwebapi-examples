@@ -23,7 +23,7 @@ namespace sistema.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseMySQL("Name=ConnectionStrings.Dint");
+                optionsBuilder.UseMySQL("Name=Sistema");
             }
         }
 

@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using sistema.Models;
 
 namespace sistema.Migrations
 {
     [DbContext(typeof(SistemaContext))]
-    partial class SistemaContextModelSnapshot : ModelSnapshot
+    [Migration("20181126093437_initialCreate")]
+    partial class initialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,8 +32,6 @@ namespace sistema.Migrations
                     b.Property<DateTime>("CriadoEm")
                         .HasColumnType("date");
 
-                    b.Property<int?>("NeighborhoodIdNeighborhood");
-
                     b.Property<int>("Origem")
                         .HasColumnType("int(11)");
 
@@ -43,8 +43,6 @@ namespace sistema.Migrations
 
                     b.HasKey("IdAccessToken");
 
-                    b.HasIndex("NeighborhoodIdNeighborhood");
-
                     b.HasIndex("Origem")
                         .HasName("FK_ea_idx");
 
@@ -52,36 +50,6 @@ namespace sistema.Migrations
                         .HasName("FK_pf_idx");
 
                     b.ToTable("AccessToken","Sistema");
-                });
-
-            modelBuilder.Entity("sistema.Models.City", b =>
-                {
-                    b.Property<int>("IdCity")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(255);
-
-                    b.Property<int>("IdState");
-
-                    b.HasKey("IdCity");
-
-                    b.HasIndex("IdState");
-
-                    b.ToTable("City");
-                });
-
-            modelBuilder.Entity("sistema.Models.Country", b =>
-                {
-                    b.Property<int>("IdCountry")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(255);
-
-                    b.HasKey("IdCountry");
-
-                    b.ToTable("Country");
                 });
 
             modelBuilder.Entity("sistema.Models.EntidadeAutenticadora", b =>
@@ -98,23 +66,6 @@ namespace sistema.Migrations
                     b.HasKey("IdEntidadeAutenticadora");
 
                     b.ToTable("EntidadeAutenticadora","Sistema");
-                });
-
-            modelBuilder.Entity("sistema.Models.Neighborhood", b =>
-                {
-                    b.Property<int>("IdNeighborhood")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(255);
-
-                    b.Property<int>("IdCity");
-
-                    b.HasKey("IdNeighborhood");
-
-                    b.HasIndex("IdCity");
-
-                    b.ToTable("Neighborhood");
                 });
 
             modelBuilder.Entity("sistema.Models.PessoaFisica", b =>
@@ -148,29 +99,8 @@ namespace sistema.Migrations
                     b.ToTable("PessoaFisica","Sistema");
                 });
 
-            modelBuilder.Entity("sistema.Models.State", b =>
-                {
-                    b.Property<int>("IdState")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(255);
-
-                    b.Property<int>("IdCountry");
-
-                    b.HasKey("IdState");
-
-                    b.HasIndex("IdCountry");
-
-                    b.ToTable("State");
-                });
-
             modelBuilder.Entity("sistema.Models.AccessToken", b =>
                 {
-                    b.HasOne("sistema.Models.Neighborhood")
-                        .WithMany("AccessToken")
-                        .HasForeignKey("NeighborhoodIdNeighborhood");
-
                     b.HasOne("sistema.Models.EntidadeAutenticadora", "OrigemNavigation")
                         .WithMany("AccessToken")
                         .HasForeignKey("Origem")
@@ -180,30 +110,6 @@ namespace sistema.Migrations
                         .WithMany("AccessToken")
                         .HasForeignKey("PessoaFisica")
                         .HasConstraintName("FK_pf");
-                });
-
-            modelBuilder.Entity("sistema.Models.City", b =>
-                {
-                    b.HasOne("sistema.Models.State", "IdStateNavigation")
-                        .WithMany("Cities")
-                        .HasForeignKey("IdState")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("sistema.Models.Neighborhood", b =>
-                {
-                    b.HasOne("sistema.Models.City", "IdCityNavigation")
-                        .WithMany("Neighborhoods")
-                        .HasForeignKey("IdCity")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("sistema.Models.State", b =>
-                {
-                    b.HasOne("sistema.Models.Country", "IdCountryNavigation")
-                        .WithMany("States")
-                        .HasForeignKey("IdCountry")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }
