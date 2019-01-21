@@ -15,6 +15,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.4" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.2" />
     <PackageReference Include="Mysql.Data.EntityFrameworkCore" Version="8.0.13" />
     <PackageReference Include="swashbuckle.aspnetcore" Version="4.0.1" />
   </ItemGroup>

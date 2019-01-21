@@ -23,7 +23,11 @@ namespace sistema.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
+<<<<<<< HEAD
                 optionsBuilder.UseMySQL("Name=ConnectionStrings.Sistema");
+=======
+                optionsBuilder.UseMySQL("Name=Sistema");
+>>>>>>> 228c80b99887515624e315258ad54d2eb263f30a
             }
         }
 
